@@ -1,0 +1,46 @@
+/* CUSTOM PROPERTIES */
+:root{
+  --ff-main: 'Nunito Sans', sans-serif;
+  --ff-secondary: 'Roboto Slab', serif;
+  --fw-reg: 300;
+  --fw-bold: 900;
+  --clr-background-color: #fff;
+  --clr-accent: #89888c;
+  --clr-text-btn: #fff;
+  --clr-text-main: #000;
+  --site-language-direction: ltr; 
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 2rem;
+  --fs-body: 1rem;
+  --lh-main: 1.1;
+} 
+/* Changes the font size over 800px */
+@media (min-width: 800px){
+  :root{
+  --fs-h1: 4.5rem;
+  --fs-h2: 2.50rem;
+  --fs-h3: 2rem;
+  --fs-body: 1.10rem;
+  }}
+html {scroll-behavior: smooth;}
+body{
+  background: var(--clr-background-color);
+  color: var(--clr-text-main);
+  font-family: var(--ff-main);
+  font-size: var(--fs-body);
+  line-height: var(--lh-main);
+
+}
+/* Connects headers to root sizes */
+p{font-size: var(--fs-body)}
+h1{font-size: var(--fs-h1)}
+h2{font-size: var(--fs-h2)}
+h3{font-size: var(--fs-h3)}
+
+h1, h2, h3{
+  transition: 0.7s;}
+p{margin: 0px !important; transition: 0.7s;}
+img{display: block; max-width: 100%}
+/* Changes default link hover color */
+.header-navigation:hover{color: var(--clr-accent);}
