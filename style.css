@@ -11,6 +11,7 @@
   --ff-main: 'Lato', sans-serif;
   --ff-secondary:  'Catamaran', sans-serif;
   --ff-three: 'Barlow', sans-serif;
+  --ff-four: 'Nothing You Could Do', cursive;
   /* use online colour picker for accuracy */
   --clr-background-color: #fff;
   --clr-accent: #F7F7F8;
@@ -25,7 +26,7 @@
 } 
 /* Changes the font size over 800px */
 
-@media (min-width: 1423px){
+@media (min-width: 1414px){
   :root{
   --fs-h1: 4.5rem;
   --fs-h2: 2.5rem;
@@ -47,7 +48,7 @@ h2{font-size: var(--fs-h2);}
 h3{font-size: var(--fs-h3);}
 p{font-size: var(--fs-body);}
 
-body, h1, h2, h3{transition: 0.7s;}
+body, h2, h3{transition: 0.7s;}
 img{display: block;}
 /* section{margin: 30px;} */
 a:link, a:visited{color: var(--clr-text-main);}
@@ -258,15 +259,45 @@ section{
   height: auto;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .heroSecton_right img{
+  
   object-fit: cover;
   height: 520px;
   float: right;
   max-width: 1500px;
   min-width: none;
 }
+
+.palette{
+  background-color: var(--clr-background-color);
+  z-index: 5;
+  position: absolute;
+  font-size: 16px;
+  font-family: var(--ff-four);
+  top:162px;
+  left: 4px;
+}
+
+.explore{
+  background-color: var(--clr-background-color);
+  z-index: 1;
+  position: absolute;
+  font-size: 15px;
+  font-family: var(--ff-four);
+  top: 58px;
+  left: 150px;
+}
+
+.heroSecton_right .explore:hover, .palette:hover{
+  font-size: 17px;
+}
+
+
+
+
 
 
 
@@ -442,6 +473,7 @@ section{
   width: auto;
   padding-top: 100px ;
   padding-bottom: 100px ;
+  position: relative;
 }
 
 .fortheplanetImage img{
@@ -463,28 +495,27 @@ section{
   line-height: 1.1;
 }
 
-.fortheplanetText_wrapper p {
+.fortheplanetText_wrapper p{
   padding: 20px 0;
-
-  
 }
 
-.fortheplanetText_wrapper a {
-  color: var(--clr-btn)
+.fortheplanetText_wrapper a{
+  color: var(--clr-btn);
+}
+
+.fortheplanetText_wrapper a:hover{
+  text-decoration: underline;
 }
 
 .nonprofitsSection_wrapper span{
-  position: relative;
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
   width: auto;
-  right: 60px;
-  top: 40px;
+  right: 100px;
+  top: 180px;
   justify-content: flex-end;
-
-
-
 }
 
 
@@ -600,3 +631,11 @@ footer{
   margin-left: 20px;
   
 }
+
+/* Media queries */
+
+@media (max-width: 965px){
+  body{display: none;
+  }
+}
+  
