@@ -425,7 +425,6 @@ section{
 }
 
 .overlayText {
-  color: var(--clr-text-main);
   font-size: 20px;
   position: absolute;
   overflow: hidden;
@@ -437,23 +436,32 @@ section{
 }
 
 #iosApp .overlay{
-  background-color: #bee4ff; 
+  background-color: #bee4ff;
+  color:#0066FF;
 }
 
 #androidApp .overlay{
   background-color: #C7F5EB;
 }
+#androidApp .overlayText {
+  color: #0D8161;
+}
 
-#figmaPlugin .overlay{
+#figmaPlugin .overlay {
   background-color: #FFE5F4;
+}
+#figmaPlugin .overlayText {
+  color: #CC0178;
 }
 
 #chromeExtension .overlay{
   background-color: #d9bcf9;
+  color: purple;
 }
 
 #adobeExtension .overlay{
   background-color: #FBEDB8;
+  color: #A98501;
 }
 
 
