@@ -34,13 +34,14 @@
   --fs-body: 1rem;
   }}
 
-html {scroll-behavior: smooth;}
+html {scroll-behavior: smooth; overflow-x: hidden;}
 
 /* applies roots to body */
 body{
   background: var(--clr-background-color);
   color: var(--clr-text-main);
   font-family: var(--ff-main);
+  scroll-behavior: h;
 }
 /* Connects font sizes to root sizes */
 h1{font-size: var(--fs-h1);}
@@ -671,6 +672,9 @@ footer{
   .explore{
     top: 45px;
     left: 110px;
+  }
+  .footer_wrapper{
+    width: 95%;
   }
 }
 
